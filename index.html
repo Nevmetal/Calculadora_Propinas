@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Propinas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/images/tips.png">
+</head>
+
+<body>
+    <section class="container">
+        <div>
+            <h1>Calculadora de propinas</h1>
+            <div class="formulario">
+                <label for="total">Total de la factura</label>
+                <input type="number" id="total" placeholder="Total de la factura">
+                <label for="porcentaje">Porcentaje de propina</label>
+                <input type="number" id="porcentaje" min="0" max="100" placeholder="Porcentaje de propina">
+                <span id="error" class="error_msg"></span>
+                <button onclick="calcularPropina()">Calcular</button>
+
+            </div>
+        </div>
+    </section>
+    <section class="total_prop">
+        <h2>Total a Pagar con Propina:</h2>
+        <div class="container_total">
+            <h4>
+                Total de la factura:
+            </h4>
+            <p id="totalFac"></p>
+            <h4>
+                Total de la propina:
+            </h4>
+            <p id="totalProp"></p>
+            <h4>
+                Total a pagar:
+            </h4>
+            <p id="totalPago"></p>
+        </div>
+
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
